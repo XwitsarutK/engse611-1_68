@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 5: Arrays</title>
+</head>
+<body>
+    <h1>JavaScript Arrays</h1>
+    
+    <div>
+        <input type="text" id="newStudent" placeholder="ชื่อนักศึกษาใหม่">
+        <button onclick="addStudent()">เพิ่มนักศึกษา</button>
+        <button onclick="removeLastStudent()">ลบคนสุดท้าย</button>
+        <button onclick="searchStudent()">ค้นหา "สม"</button>
+        <button onclick="showStatistics()">แสดงสถิติ</button>
+    </div>
+    
+    <div>
+        <input type="text" id="studentNameForSubject" placeholder="ชื่อนักศึกษา">
+        <input type="text" id="newSubject" placeholder="วิชาใหม่">
+        <button onclick="addEnrolledSubject(document.getElementById('studentNameForSubject').value.trim(), document.getElementById('newSubject').value.trim())">เพิ่มวิชา</button>
+        <button onclick="searchEnrolledSubject(document.getElementById('studentNameForSubject').value.trim())">ค้นหาวิชา</button>
+    </div>
+
+    <div id="arrayResult"></div>
+
+    <script>
+        let students = ["สมชาย", "สมหญิง", "สมศักดิ์", "สมใจ", "วิภา", "นิพนธ์"];
+        let scores = [85, 92, 78, 88, 96, 82];
+        let subjects = ["คณิตศาสตร์", "ฟิสิกส์", "เคมี", "โปรแกรมมิ่ง", "ภาษาอังกฤษ"];
+        let enrolledSubjects = [
+            { student: "สมชาย", subject: "คณิตศาสตร์" },
+            { student: "สมชาย", subject: "ฟิสิกส์" },
+            { student: "สมหญิง", subject: "เคมี" },
+            { student: "วิภา", subject: "โปรแกรมมิ่ง" }
+        ];
+
+        function createList(items, title, itemFormatter = item => item) {
+            let result = `<h3>${title} (${items.length} รายการ):</h3><ul>`;
+            items.forEach((item, index) => {
+                result += `<li>${itemFormatter(item, index)}</li>`;
+            });
+            result += "</ul>";
+            return result;
+        }
+
+        function displayStudents() {
+            return createList(students, "รายชื่อนักศึกษา", (student, index) => `${student} - คะแนน: ${scores[index] || 'ไม่มีข้อมูล'}`);
+        }
+
+        function displayEnrolledSubjects() {
+            return createList(enrolledSubjects, "รายวิชาที่ลงเรียน", item => `${item.student} - ${item.subject}`);
+        }
+
+        function addStudent() {
+            const newName = document.getElementById('newStudent').value.trim();
+            if (newName === "") {
+                alert("กรุณาใส่ชื่อนักศึกษา");
+                return;
+            }
+            students.push(newName);
+            const randomScore = Math.floor(Math.random() * 40) + 60;
+            scores.push(randomScore);
+            document.getElementById('newStudent').value = "";
+            updateDisplayWithSubjects();
+            console.log("เพิ่มนักศึกษา:", newName, "คะแนน:", randomScore);
+        }
+
+        function removeLastStudent() {
+            if (students.length === 0) {
+                alert("ไม่มีนักศึกษาในรายชื่อ");
+                return;
+            }
+            const removedStudent = students.pop();
+            const removedScore = scores.pop();
+            updateDisplayWithSubjects();
+            console.log("ลบนักศึกษา:", removedStudent, "คะแนน:", removedScore);
+        }
+
+        function searchStudent() {
+            const foundStudents = students.filter(name => name.includes("สม"));
+            let result = displayStudents();
+            result += `<h4>นักศึกษาที่มี "สม" ในชื่อ (${foundStudents.length} คน):</h4>`;
+            result += `<p style="color: blue;">${foundStudents.join(", ")}</p>`;
+            document.getElementById('arrayResult').innerHTML = result;
+            console.log("ผลการค้นหา:", foundStudents);
+        }
+
+        function showStatistics() {
+            const totalStudents = students.length;
+            let result = displayStudents();
+            if (totalStudents === 0) {
+                result += `<h4>สถิติคะแนน:</h4><p>ไม่มีข้อมูลนักศึกษา</p>`;
+            } else {
+                const totalScore = scores.reduce((sum, score) => sum + score, 0);
+                const averageScore = totalScore / totalStudents;
+                const maxScore = Math.max(...scores);
+                const minScore = Math.min(...scores);
+                const topStudentIndex = scores.indexOf(maxScore);
+                const topStudent = students[topStudentIndex] || 'ไม่มีข้อมูล';
+                result += `
+                    <h4>สถิติคะแนน:</h4>
+                    <ul>
+                        <li>จำนวนนักศึกษา: ${totalStudents} คน</li>
+                        <li>คะแนนเฉลี่ย: ${averageScore.toFixed(2)} คะแนน</li>
+                        <li>คะแนนสูงสุด: ${maxScore} คะแนน (${topStudent})</li>
+                        <li>คะแนนต่ำสุด: ${minScore} คะแนน</li>
+                    </ul>
+                `;
+            }
+            document.getElementById('arrayResult').innerHTML = result;
+            console.log("=== สถิติ ===");
+            console.log("คะแนนเฉลี่ย:", totalStudents ? averageScore.toFixed(2) : 'ไม่มีข้อมูล');
+            console.log("นักศึกษาเก่ง:", topStudent, "คะแนน:", maxScore);
+        }
+
+        function addEnrolledSubject(student, subject) {
+            if (student === "" || subject === "") {
+                alert("กรุณาใส่ชื่อนักศึกษาและวิชา");
+                return;
+            }
+            if (!students.includes(student)) {
+                alert("ไม่พบนักศึกษาในรายชื่อ");
+                return;
+            }
+            enrolledSubjects.push({ student, subject });
+            document.getElementById('studentNameForSubject').value = "";
+            document.getElementById('newSubject').value = "";
+            updateDisplayWithSubjects();
+            console.log(`เพิ่มรายวิชา: ${student} - ${subject}`);
+        }
+
+        function filterByStudent(studentName) {
+            const filtered = enrolledSubjects.filter(item => item.student === studentName);
+            return createList(filtered, `วิชาของ ${studentName}`, item => item.subject);
+        }
+
+        function searchEnrolledSubject(studentName) {
+            if (studentName === "") {
+                alert("กรุณาใส่ชื่อนักศึกษาเพื่อค้นหา");
+                return;
+            }
+            let result = displayStudents() + displayEnrolledSubjects() + filterByStudent(studentName);
+            document.getElementById('arrayResult').innerHTML = result;
+            console.log(`ค้นหาวิชาของ ${studentName}:`, enrolledSubjects.filter(item => item.student === studentName));
+        }
+
+        function updateDisplay() {
+            updateDisplayWithSubjects();
+        }
+
+        function updateDisplayWithSubjects() {
+            let result = displayStudents() + displayEnrolledSubjects();
+            document.getElementById('arrayResult').innerHTML = result;
+        }
+
+        function logArrayInfo() {
+            console.log("=== Array Info ===");
+            console.log("students.length:", students.length);
+            console.log("students[0]:", students[0]);
+            console.log("students.join(', '):", students.join(", "));
+            console.log("subjects.slice(0, 3):", subjects.slice(0, 3));
+            console.log("students.indexOf('สมชาย'):", students.indexOf("สมชาย"));
+        }
+
+        logArrayInfo();
+        updateDisplayWithSubjects();
+    </script>
+</body>
+</html>

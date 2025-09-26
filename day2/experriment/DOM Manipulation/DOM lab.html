@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 1: Variables</title>
+
+    <style>
+        h1 {
+            color: red;
+            font-size: 30px;
+        }
+
+        .c_1 {
+            background: yellow;
+        }
+
+        .highlight {
+            background-color: #D4A23733;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-weight: 500;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1 id="h_1">JavaScript Variables</h1>
+    <p id="p_1">เปิด Console (F12)1 เพื่อดูผลลัพธ์</p>
+    <p class="c_1">เปิด Console (F12)2 เพื่อดูผลลัพธ์</p>
+    <p class="c_1">เปิด Console (F12)3 เพื่อดูผลลัพธ์</p>
+
+    <script>
+        let h_1 = document.getElementById('h_1');
+        let h1_select = document.querySelector('#h1');
+
+        let c_1 = document.querySelector('c_1'); //เปิด Console (F12)2 เพื่อดูผลลัพธ์
+
+        setTimeout(() => {
+            h_1.innerHTML = '<h2>หัวข้อใหม่</h2><p>จาก innerHTML</p>';
+        }, 3000);
+
+        setTimeout(() => {
+            h1_select.classList.add('highlight'); // เพิ่ม class
+        }, 5000);
+
+        // ประกาศตัวแปรแต่ละประเภท
+        let studentName = "นายธนิต เกตุแก้ว";          // String (ข้อความ)
+        const university = "มหาวิทยาลัยเทคโนโลยี"; // String (ค่าคงที่)
+        var age = 20;                         // Number (ตัวเลข)
+        let gpa = 3.25;                       // Number (ทศนิยม)
+        let isStudent = true;                 // Boolean (จริง/เท็จ)
+        let address = null;                   // Null (ค่าว่าง)
+        let phoneNumber;                      // Undefined (ไม่กำหนดค่า)
+
+        // แสดงผลลัพธ์ใน Console
+        console.log("=== ข้อมูลนักศึกษา ===");
+        console.log("ชื่อ:", studentName);
+        console.log("มหาวิทยาลัย:", university);
+        console.log("อายุ:", age);
+        console.log("เกรดเฉลี่ย:", gpa);
+        console.log("เป็นนักศึกษา:", isStudent);
+        console.log("ที่อยู่:", address);
+        console.log("เบอร์โทร:", phoneNumber);
+
+        console.log("=== การทำงานกับ Number และ Math ===");
+
+        let a = 10;
+        let b = 3;
+
+
+        console.log('a + b =', a + b);  // บวก
+        console.log('a % b =', a % b);  // เศษจากการหาร
+        console.log('a ** b =', a ** b); // ยกกำลัง
+
+
+        // Math Object
+        console.log('ปัดเศษ 3.7:', Math.round(3.7));
+        console.log('ปัดลง 3.7:', Math.floor(3.7));
+        console.log('ปัดขึ้น 3.2:', Math.ceil(3.2));
+        console.log('สุ่ม 0-1:', Math.random());
+
+        // สุ่มเลข 1-6 (ลูกเต๋า)
+        let dice = Math.floor(Math.random() * 6) + 1;
+        console.log('ทอยลูกเต๋าได้:', dice);
+
+        console.log("=== Function ===");
+
+        // Function Declaration
+        function greetPerson(name) {
+            console.log(`สวัสดี ${name}!`);
+        }
+
+        function calculateArea(width, height) {
+            return width * height;
+        }
+
+        // การเรียกใช้
+        greetPerson('สมชาย');
+        greetPerson('Thanit');
+        let area = calculateArea(3, 4);
+        console.log('พื้นที่:', area);
+
+        // Arrow Function (แบบสั้น)
+        const square = x => x * x;
+        console.log('5 ยกกำลัง 2:', square(5));
+
+        let calculator = {
+            result: 0,
+            add: function (num) {
+                this.result += num; return this;
+            },
+            subtract: function (num) { this.result -= num; return this; },
+            multiply: function (num) { this.result *= num; return this; },
+            divide: function (num) { this.result /= num; return this; },
+            clear: function () { this.result = 0; return this; },
+            getResult: function () { return this.result; }
+        };
+
+        let answer = calculator.clear().add(10).multiply(5).subtract(20).divide(2).getResult();
+
+
+
+    </script>
+
+
+</body>
+
+</html>
