@@ -1,0 +1,209 @@
+/* src/components/ProductList.css - CSS พื้นฐาน นักศึกษาจะปรับปรุงเพิ่มเติม */
+.product-list-container {
+  max-width: 1200px; /* กว้างสูงสุดเพื่อให้อยู่กลางจอ */
+  margin: 0 auto; /* จัดให้อยู่ตรงกลาง */
+  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.header h1 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(280px, 1fr)); /* 3 คอลัมน์เริ่มต้น */
+  gap: 25px;
+  margin-bottom: 30px;
+}
+
+/* Product Card - โครงสร้างพื้นฐาน */
+.product-card {
+  background: white;
+  border: 1px solid #e9ecef;
+  border-radius: 8px;
+  overflow: hidden;
+  padding: 15px;
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
+
+.product-image img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.product-info {
+  margin-top: 15px;
+}
+
+.product-name {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.product-price {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #007bff;
+  margin: 10px 0;
+}
+
+/* เพิ่มสไตล์สำหรับราคาเดิมและส่วนลด */
+.original-price {
+  text-decoration: line-through;
+  color: #6c757d;
+  font-size: 1rem;
+  margin-left: 10px;
+  font-weight: normal;
+}
+
+.discount-tag {
+  color: red;
+  font-size: 0.9rem;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+.product-actions {
+  margin-top: 15px;
+}
+
+.btn {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+  margin-right: 10px;
+  margin-bottom: 5px;
+}
+
+.btn-primary {
+  background: #007bff;
+  color: white;
+}
+
+.btn-secondary {
+  background: #6c757d;
+  color: white;
+}
+
+.btn:disabled {
+  background: #e9ecef;
+  color: #6c757d;
+  cursor: not-allowed;
+}
+
+/* เพิ่มใน ProductList.css */
+.product-rating {
+  margin: 10px 0;
+  color: #ffd700; /* สีทองสำหรับดาว */
+  display: flex;
+  align-items: center;
+}
+
+.product-rating span {
+  margin-right: 2px;
+}
+
+.rating-number {
+  margin-left: 5px;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+/* เพิ่มสไตล์สำหรับ Star Rating */
+.star {
+  font-size: 1.2rem;
+  margin-right: 2px;
+  position: relative;
+  display: inline-block;
+}
+
+.full-star {
+  position: relative;
+}
+
+.full-star::before {
+  content: '⭐';
+}
+
+.half-star {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  width: 0.6em; /* ครึ่งหนึ่งของดาว */
+  height: 1.2em;
+}
+
+.half-star::before {
+  content: '⭐';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: #ffd700;
+}
+
+.empty-star::before {
+  content: '☆';
+  color: #ccc;
+}
+
+/* เพิ่มใน ProductList.css */
+#search-box {
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+#sort-select {
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+#search-box:focus, #sort-select:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* ส่วนที่นักศึกษาจะต้องเพิ่มเติม: */
+@media (max-width: 1024px) {
+  .products-grid {
+    grid-template-columns: repeat(2, minmax(280px, 1fr)); /* 2 คอลัมน์เมื่อหน้าจอเล็กลง */
+  }
+  .star { font-size: 1rem; }
+  .product-rating { margin: 5px 0; }
+}
+
+@media (max-width: 768px) {
+  .products-grid {
+    grid-template-columns: 1fr; /* 1 คอลัมน์เมื่อหน้าจอเล็กมาก */
+  }
+}
+
+/* 
+- Responsive design (เพิ่มแล้ว)
+- Filter styles
+- Advanced animations
+- Status indicators
+*/
