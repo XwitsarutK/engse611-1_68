@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1759421888306,
+    "rating": 1,
+    "comment": "จะตั้งใจเรียน",
+    "email": "witsarut@live.rmutl.ac.th",
+    "createdAt": "2025-10-02T16:18:08.306Z"
+  },
+  {
+    "id": 1759422146150,
+    "rating": 2,
+    "comment": "บ้านพักแมวรายวัน",
+    "email": "chujai@email.com",
+    "createdAt": "2025-10-02T16:22:26.150Z"
+  },
+  {
+    "id": 1759422208024,
+    "rating": 3,
+    "comment": "บ้านพักแมวรายสัปดาห์",
+    "email": "songkran@email.com",
+    "createdAt": "2025-10-02T16:23:28.024Z"
+  },
+  {
+    "id": 1759422231910,
+    "rating": 4,
+    "comment": "บ้านพักแมวรายเดือน",
+    "email": "mongkhon@email.com",
+    "createdAt": "2025-10-02T16:23:51.910Z"
+  },
+  {
+    "id": 1759422253577,
+    "rating": 5,
+    "comment": "บ้านพักแมวปี",
+    "email": "maysa@email.com",
+    "createdAt": "2025-10-02T16:24:13.577Z"
+  }
+]
