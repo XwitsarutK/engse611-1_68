@@ -1,0 +1,407 @@
+[
+  {
+    "id": 1759844877939,
+    "restaurantId": 1,
+    "userName": "เอ็ก",
+    "rating": 5,
+    "comment": "อร่อยมากครับ",
+    "visitDate": "2025-10-07",
+    "createdAt": "2025-10-07T13:47:57.939Z"
+  },
+  {
+    "id": 1759853515815,
+    "restaurantId": 1,
+    "userName": "บีม",
+    "rating": 4,
+    "comment": "ส้มตำแซ่บมาก ลาบก็อร่อย บรรยากาศกันเอง",
+    "visitDate": "2025-10-07",
+    "createdAt": "2025-10-07T16:11:55.815Z"
+  },
+  {
+    "id": 1759853539747,
+    "restaurantId": 1,
+    "userName": "น้ำฝน",
+    "rating": 5,
+    "comment": "ตำปูปลาร้าคือที่สุด! ไปซ้ำแน่นอน",
+    "visitDate": "2025-10-07",
+    "createdAt": "2025-10-07T16:12:19.747Z"
+  },
+  {
+    "id": 1759853579640,
+    "restaurantId": 1,
+    "userName": "ต้น",
+    "rating": 4,
+    "comment": "อาหารอีสานแท้ๆ ราคาดี รสชาติจัดจ้าน",
+    "visitDate": "2025-10-07",
+    "createdAt": "2025-10-07T16:12:59.640Z"
+  },
+  {
+    "id": 1759853604071,
+    "restaurantId": 1,
+    "userName": "แป้ง",
+    "rating": 5,
+    "comment": "ลาบหมูอร่อยมาก ส้มตำรสเด็ดสุดๆ",
+    "visitDate": "2025-10-07",
+    "createdAt": "2025-10-07T16:13:24.071Z"
+  },
+  {
+    "id": 1759853623806,
+    "restaurantId": 2,
+    "userName": "มาย",
+    "rating": 5,
+    "comment": "ซูชิสดมาก วัตถุดิบดีเหมือนกินที่ญี่ปุ่น",
+    "visitDate": "2025-10-07",
+    "createdAt": "2025-10-07T16:13:43.806Z"
+  },
+  {
+    "id": 1759853637744,
+    "restaurantId": 2,
+    "userName": "โอม",
+    "rating": 4,
+    "comment": "เชฟบริการดี ซาชิมิละลายในปาก",
+    "visitDate": "2025-10-07",
+    "createdAt": "2025-10-07T16:13:57.744Z"
+  },
+  {
+    "id": 1759853655984,
+    "restaurantId": 2,
+    "userName": "จูน",
+    "rating": 5,
+    "comment": "โรลปลาไหลอร่อยมาก บรรยากาศดี",
+    "visitDate": "2025-10-07",
+    "createdAt": "2025-10-07T16:14:15.984Z"
+  },
+  {
+    "id": 1759853669936,
+    "restaurantId": 2,
+    "userName": "อาร์ม",
+    "rating": 4,
+    "comment": "ราคาสูงแต่คุ้มกับคุณภาพ ปลาสดจริง",
+    "visitDate": "2025-10-07",
+    "createdAt": "2025-10-07T16:14:29.936Z"
+  },
+  {
+    "id": 1759853681327,
+    "restaurantId": 2,
+    "userName": "ฟ้า",
+    "rating": 5,
+    "comment": "ข้าวหน้าปลาแซลมอนดีงามมาก",
+    "visitDate": "2025-10-07",
+    "createdAt": "2025-10-07T16:14:41.327Z"
+  },
+  {
+    "id": 1759853710562,
+    "restaurantId": 3,
+    "userName": "ปาล์ม",
+    "rating": 5,
+    "comment": "พิซซ่าเตาอบไม้หอมมาก ชีสยืดสุดๆ",
+    "visitDate": "2025-10-07",
+    "createdAt": "2025-10-07T16:15:10.562Z"
+  },
+  {
+    "id": 1759853724130,
+    "restaurantId": 3,
+    "userName": "อิ๋ว",
+    "rating": 4,
+    "comment": "แป้งบางกรอบ ซอสเข้มข้น ชอบมาก",
+    "visitDate": "2025-10-07",
+    "createdAt": "2025-10-07T16:15:24.130Z"
+  },
+  {
+    "id": 1759853734113,
+    "restaurantId": 3,
+    "userName": "บอส",
+    "rating": 5,
+    "comment": "พิซซ่าซีฟู้ดอร่อยมาก ชีสเยิ้มดี",
+    "visitDate": "2025-10-07",
+    "createdAt": "2025-10-07T16:15:34.113Z"
+  },
+  {
+    "id": 1759853749825,
+    "restaurantId": 3,
+    "userName": "กิ๊ฟ",
+    "rating": 4,
+    "comment": "บรรยากาศอบอุ่น พนักงานน่ารัก",
+    "visitDate": "2025-10-07",
+    "createdAt": "2025-10-07T16:15:49.825Z"
+  },
+  {
+    "id": 1759853765005,
+    "restaurantId": 3,
+    "userName": "อาร์ต",
+    "rating": 5,
+    "comment": "พิซซ่าแป้งบางคือที่สุด!",
+    "visitDate": "2025-10-07",
+    "createdAt": "2025-10-07T16:16:05.005Z"
+  },
+  {
+    "id": 1759853804215,
+    "restaurantId": 4,
+    "userName": "บอย",
+    "rating": 4,
+    "comment": "ก๋วยเตี๋ยวเรือรสเข้มข้น เนื้อสดดีมาก",
+    "visitDate": "2025-10-07",
+    "createdAt": "2025-10-07T16:16:44.215Z"
+  },
+  {
+    "id": 1759853956919,
+    "restaurantId": 4,
+    "userName": "แนน",
+    "rating": 4,
+    "comment": "น้ำซุปหอม อร่อย ราคาถูกใจ",
+    "visitDate": "2025-10-07",
+    "createdAt": "2025-10-07T16:19:16.919Z"
+  },
+  {
+    "id": 1759853970463,
+    "restaurantId": 4,
+    "userName": "อ๋อม",
+    "rating": 5,
+    "comment": "เส้นเหนียวนุ่ม หมูสด น้ำซุปกลมกล่อม",
+    "visitDate": "2025-10-07",
+    "createdAt": "2025-10-07T16:19:30.463Z"
+  },
+  {
+    "id": 1759853986789,
+    "restaurantId": 4,
+    "userName": "อาร์ท",
+    "rating": 4,
+    "comment": "ร้านสะอาด บริการดี กินแล้วฟิน",
+    "visitDate": "2025-10-07",
+    "createdAt": "2025-10-07T16:19:46.789Z"
+  },
+  {
+    "id": 1759854027472,
+    "restaurantId": 5,
+    "userName": "อิง",
+    "rating": 5,
+    "comment": "ติ่มซำสดใหม่ ฮะเก๋าอร่อยมาก",
+    "visitDate": "2025-10-07",
+    "createdAt": "2025-10-07T16:20:27.472Z"
+  },
+  {
+    "id": 1759854046934,
+    "restaurantId": 5,
+    "userName": "บาส",
+    "rating": 4,
+    "comment": "ขนมจีบกุ้งแน่นๆ เสี่ยวหลงเปาเด็ด",
+    "visitDate": "2025-10-07",
+    "createdAt": "2025-10-07T16:20:46.934Z"
+  },
+  {
+    "id": 1759854065617,
+    "restaurantId": 5,
+    "userName": "จ๋า",
+    "rating": 5,
+    "comment": "บรรยากาศจีนแท้ๆ อาหารอร่อยทุกอย่าง",
+    "visitDate": "2025-10-07",
+    "createdAt": "2025-10-07T16:21:05.617Z"
+  },
+  {
+    "id": 1759854093037,
+    "restaurantId": 5,
+    "userName": "ออย",
+    "rating": 4,
+    "comment": "ราคาดี คุณภาพคุ้มค่า ติ่มซำสดใหม่",
+    "visitDate": "2025-10-07",
+    "createdAt": "2025-10-07T16:21:33.037Z"
+  },
+  {
+    "id": 1759854119826,
+    "restaurantId": 6,
+    "userName": "บิ๊ก",
+    "rating": 5,
+    "comment": "เบอร์เกอร์เนื้อฉ่ำมาก ขนมปังนุ่ม",
+    "visitDate": "2025-10-07",
+    "createdAt": "2025-10-07T16:21:59.826Z"
+  },
+  {
+    "id": 1759854133912,
+    "restaurantId": 6,
+    "userName": "อาร์ตี้",
+    "rating": 4,
+    "comment": "เฟรนช์ฟรายส์กรอบดี เบอร์เกอร์ใหญ่สะใจ",
+    "visitDate": "2025-10-07",
+    "createdAt": "2025-10-07T16:22:13.912Z"
+  },
+  {
+    "id": 1759854150771,
+    "restaurantId": 6,
+    "userName": "จูน",
+    "rating": 5,
+    "comment": "ชีสเบอร์เกอร์อร่อยมาก ซอสเด็ด",
+    "visitDate": "2025-10-07",
+    "createdAt": "2025-10-07T16:22:30.771Z"
+  },
+  {
+    "id": 1759854166066,
+    "restaurantId": 6,
+    "userName": "บี",
+    "rating": 4,
+    "comment": "บริการไว ราคาไม่แพง เบอร์เกอร์เนื้อแน่น",
+    "visitDate": "2025-10-07",
+    "createdAt": "2025-10-07T16:22:46.066Z"
+  },
+  {
+    "id": 1759854187395,
+    "restaurantId": 7,
+    "userName": "ฟิล์ม",
+    "rating": 5,
+    "comment": "ราเมงน้ำซุปเข้มข้น หมูชาชูนุ่มมาก",
+    "visitDate": "2025-10-07",
+    "createdAt": "2025-10-07T16:23:07.395Z"
+  },
+  {
+    "id": 1759854203761,
+    "restaurantId": 7,
+    "userName": "อิ๋ว",
+    "rating": 4,
+    "comment": "ไข่อนเซ็นดีงาม เส้นเหนียวนุ่ม",
+    "visitDate": "2025-10-07",
+    "createdAt": "2025-10-07T16:23:23.761Z"
+  },
+  {
+    "id": 1759854230994,
+    "restaurantId": 7,
+    "userName": "อิ๋ว",
+    "rating": 5,
+    "comment": "ไข่ออนเซ็นดีงาม เส้นเหนียวนุ่ม",
+    "visitDate": "2025-10-07",
+    "createdAt": "2025-10-07T16:23:50.994Z"
+  },
+  {
+    "id": 1759854248545,
+    "restaurantId": 7,
+    "userName": "บีม",
+    "rating": 5,
+    "comment": "ราเมงอร่อยมาก ซุปกลมกล่อม",
+    "visitDate": "2025-10-07",
+    "createdAt": "2025-10-07T16:24:08.545Z"
+  },
+  {
+    "id": 1759854261970,
+    "restaurantId": 7,
+    "userName": "อาร์ม",
+    "rating": 4,
+    "comment": "หมูชาชูละลายในปาก บริการดี",
+    "visitDate": "2025-10-07",
+    "createdAt": "2025-10-07T16:24:21.970Z"
+  },
+  {
+    "id": 1759854293071,
+    "restaurantId": 8,
+    "userName": "ออย",
+    "rating": 5,
+    "comment": "ข้าวมันไก่นุ่ม น้ำจิ้มเด็ดมาก",
+    "visitDate": "2025-10-07",
+    "createdAt": "2025-10-07T16:24:53.071Z"
+  },
+  {
+    "id": 1759854313091,
+    "restaurantId": 8,
+    "userName": "บาส",
+    "rating": 4,
+    "comment": "ข้าวหอม ไก่สด น้ำซุปดีมาก",
+    "visitDate": "2025-10-07",
+    "createdAt": "2025-10-07T16:25:13.091Z"
+  },
+  {
+    "id": 1759854324505,
+    "restaurantId": 8,
+    "userName": "ฟ้า",
+    "rating": 5,
+    "comment": "บริการไว ราคาไม่แพง อร่อยทุกอย่าง",
+    "visitDate": "2025-10-07",
+    "createdAt": "2025-10-07T16:25:24.505Z"
+  },
+  {
+    "id": 1759854339888,
+    "restaurantId": 8,
+    "userName": "อาร์ท",
+    "rating": 4,
+    "comment": "ข้าวมันไก่ต้นตำรับจริงๆ กินแล้วคิดถึงบ้าน",
+    "visitDate": "2025-10-07",
+    "createdAt": "2025-10-07T16:25:39.888Z"
+  },
+  {
+    "id": 1759854367111,
+    "restaurantId": 9,
+    "userName": "บิ๊ก",
+    "rating": 5,
+    "comment": "สเต็กเนื้อวากิวดีมาก นุ่มละลายในปาก",
+    "visitDate": "2025-10-07",
+    "createdAt": "2025-10-07T16:26:07.111Z"
+  },
+  {
+    "id": 1759854380193,
+    "restaurantId": 9,
+    "userName": "อิ๋ว",
+    "rating": 4,
+    "comment": "บรรยากาศหรูหรา เนื้อคุณภาพดี",
+    "visitDate": "2025-10-07",
+    "createdAt": "2025-10-07T16:26:20.193Z"
+  },
+  {
+    "id": 1759854398216,
+    "restaurantId": 9,
+    "userName": "ฟิล์ม",
+    "rating": 5,
+    "comment": "ซอสสเต็กอร่อยมาก เนื้อย่างกำลังดี",
+    "visitDate": "2025-10-07",
+    "createdAt": "2025-10-07T16:26:38.216Z"
+  },
+  {
+    "id": 1759854413997,
+    "restaurantId": 9,
+    "userName": "บีม",
+    "rating": 4,
+    "comment": "ราคาสูงแต่คุ้มกับคุณภาพ",
+    "visitDate": "2025-10-07",
+    "createdAt": "2025-10-07T16:26:53.997Z"
+  },
+  {
+    "id": 1759854432710,
+    "restaurantId": 9,
+    "userName": "น้ำฝน",
+    "rating": 5,
+    "comment": "ผัดไทยเส้นเหนียวนุ่ม รสชาติดีมาก",
+    "visitDate": "2025-10-07",
+    "createdAt": "2025-10-07T16:27:12.710Z"
+  },
+  {
+    "id": 1759854459602,
+    "restaurantId": 10,
+    "userName": "บาส",
+    "rating": 4,
+    "comment": "ผัดไทยโบราณหอมกลิ่นกระทะ อร่อยสุดๆ",
+    "visitDate": "2025-10-07",
+    "createdAt": "2025-10-07T16:27:39.602Z"
+  },
+  {
+    "id": 1759854471026,
+    "restaurantId": 10,
+    "userName": "อาร์ม",
+    "rating": 5,
+    "comment": "บริการดี ราคาถูก กินแล้วคิดถึงบ้าน",
+    "visitDate": "2025-10-07",
+    "createdAt": "2025-10-07T16:27:51.026Z"
+  },
+  {
+    "id": 1759854501778,
+    "restaurantId": 10,
+    "userName": "ฟ้า",
+    "rating": 4,
+    "comment": "ผัดไทยรสชาติดั้งเดิม เส้นเหนียวนุ่ม",
+    "visitDate": "2025-10-07",
+    "createdAt": "2025-10-07T16:28:21.778Z"
+  },
+  {
+    "id": 1759854547479,
+    "restaurantId": 10,
+    "userName": "น้ำฝน",
+    "rating": 5,
+    "comment": "ผัดไทยเส้นเหนียวนุ่ม รสชาติดีมาก",
+    "visitDate": "2025-10-07",
+    "createdAt": "2025-10-07T16:29:07.479Z"
+  }
+]
