@@ -5,6 +5,7 @@ import './App.css';
 
 function App() {
   const [selectedRestaurantId, setSelectedRestaurantId] = useState(null);
+  const [darkMode, setDarkMode] = useState(false);
 
   const handleSelectRestaurant = (id) => {
     setSelectedRestaurantId(id);
@@ -14,11 +15,27 @@ function App() {
     setSelectedRestaurantId(null);
   };
 
+  const toggleDarkMode = () => {
+    setDarkMode((prev) => !prev);
+  };
+
   return (
-    <div className="app">
+    <div className={`app${darkMode ? ' dark-mode' : ''}`}>
       <header className="app-header">
-        <h1>🍜 Restaurant Review</h1>
-        <p>ค้นหาและรีวิวร้านอาหารโปรดของคุณ</p>
+        <div style={{ position: 'relative' }}>
+          <button
+            className="mode-toggle-btn"
+            onClick={toggleDarkMode}
+            aria-label="Toggle dark/light mode"
+            style={{ position: 'absolute', top: 0, right: 0 }}
+          >
+            {darkMode ? '☀️ โหมดสว่าง' : '🌙 โหมดมืด'}
+          </button>
+          <div style={{ textAlign: 'center' }}>
+            <h1>🍜 Restaurant Review</h1>
+            <p>ค้นหาและรีวิวร้านอาหารโปรดของคุณ</p>
+          </div>
+        </div>
       </header>
 
       <main className="app-main">

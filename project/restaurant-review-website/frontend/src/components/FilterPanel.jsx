@@ -73,7 +73,7 @@ function FilterPanel({ onFilterChange, filters }) {
           value={filters.sortOrder || ''}
           onChange={e => (typeof onSortChange === 'function' ? onSortChange(e.target.value) : onFilterChange({ sortOrder: e.target.value }))}
         >
-          <option value="">ไม่มี</option>
+          <option value="">ทั้งหมด</option>
           <option value="asc">น้อยไปมาก</option>
           <option value="desc">มากไปน้อย</option>
         </select>
